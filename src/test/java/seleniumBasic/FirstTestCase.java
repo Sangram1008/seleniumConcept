@@ -11,17 +11,18 @@ import org.openqa.selenium.chrome.ChromeDriver;
 public class FirstTestCase {
 
     // Launch Browser
-    WebDriver driver = new ChromeDriver();
+
+    // protected will help to access in other package with extends
+    protected WebDriver driver = new ChromeDriver();
 
     String webSiteTitle = "Book Your Free Demo Now - Phptravels";
 
-    void openUrl() {
-        // Open Url https://phptravels.com/demo/
-        driver.get("https://phptravels.com/demo/");
+    protected void openUrl(String url) {
+        driver.get(url);
     }
 
     void validateTitle() {
-        this.openUrl();
+        this.openUrl("https://phptravels.com/demo/");
 
         // Validate the title should be "Your Store"
         if (this.webSiteTitle.equals(driver.getTitle())) {
@@ -31,15 +32,14 @@ public class FirstTestCase {
         }
     }
 
-    void closeBrowser() {
-        this.validateTitle();
-
+    protected void closeBrowser() {
         // Close Browser
         driver.quit();
     }
 
     public static void main(String[] args) {
         FirstTestCase ftc = new FirstTestCase();
+        ftc.validateTitle();
         ftc.closeBrowser();
     }
 }
