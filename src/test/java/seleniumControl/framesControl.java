@@ -6,7 +6,6 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 public class framesControl {
-
     WebDriver driver = new ChromeDriver();
 
     void openSite() {
