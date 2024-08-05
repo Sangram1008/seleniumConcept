@@ -15,7 +15,6 @@ public class dropDownWithoutSelect {
     WebDriver driver = new ChromeDriver();
     WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
 
-
     void openSite() {
         driver.get("https://phptravels.com/demo/");
         driver.manage().window().maximize();

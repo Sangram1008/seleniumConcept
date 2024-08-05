@@ -34,8 +34,6 @@ public class selectDropDown {
         for (WebElement listValue : list) {
             System.out.println("Country List" + " " + listValue.getText());
         }
-
-
     }
 
     public static void main(String[] args) {
