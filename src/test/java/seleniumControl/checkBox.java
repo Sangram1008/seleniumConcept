@@ -29,12 +29,10 @@ public class checkBox {
         for (int i = 0; i < checkBoxLists.size(); i++) {
             checkBoxLists.get(i).click();
         }
-
     }
 
     public static void main(String[] args) {
         checkBox cb = new checkBox();
-        // cb.selectSingleCheckBox();
         cb.selectAllCheckBox();
     }
 }
