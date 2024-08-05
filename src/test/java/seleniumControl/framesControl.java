@@ -41,7 +41,6 @@ public class framesControl {
         try {
             driver.findElement(By.xpath("//*[@id=\"i8\"]/div[3]/div")).click();
         } catch (Exception e) {
-            e.getMessage();
             System.out.println(e.getMessage());
         }
         driver.switchTo().defaultContent();
