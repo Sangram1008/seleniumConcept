@@ -15,12 +15,12 @@ public class checkBoxOrderSelect {
         driver.manage().window().maximize();
         driver.get("https://testautomationpractice.blogspot.com/");
     }
-
     void checkBoxOrder() {
 
         // Clicking Last three Check box
         // 1 2 3 4 5 6 7
         // 0 1 2 3 4 5 6
+
         this.openSite();
         List<WebElement> checkBoxLists = driver.findElements(By.xpath("//*[@class='form-check-input'  and @type='checkbox']"));
 
