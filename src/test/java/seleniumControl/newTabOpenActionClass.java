@@ -10,7 +10,6 @@ import org.openqa.selenium.interactions.Actions;
 import java.time.Duration;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Set;
 
 public class newTabOpenActionClass {
 
@@ -29,7 +28,7 @@ public class newTabOpenActionClass {
         actions.keyDown(Keys.CONTROL).click(clickRegister).keyUp(Keys.CONTROL).build().perform();
 
         // switching to Register page
-        List<String> windowId = new ArrayList(driver.getWindowHandles());
+        List<String> windowId = new ArrayList<>(driver.getWindowHandles());
         driver.switchTo().window(windowId.get(1)); // Switch to Register page
 
         driver.findElement(By.id("FirstName")).sendKeys("Selenium");
