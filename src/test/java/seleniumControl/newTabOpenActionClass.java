@@ -36,9 +36,7 @@ public class newTabOpenActionClass {
         // Switching to Home Page
         driver.switchTo().window(windowId.get(0));
         driver.findElement(By.xpath("//*[@placeholder='Search store']")).sendKeys("Electronics");
-
     }
-
 
     public static void main(String[] args) {
         newTabOpenActionClass ntc = new newTabOpenActionClass();

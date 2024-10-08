@@ -39,6 +39,7 @@ public class handleBrowserWindow {
 //        driver.switchTo().window(secondPage);
 //        System.out.println("SecondPage Title" + driver.getTitle());
 
+
         for (String winId : windowId) {
             String title = driver.switchTo().window(winId).getTitle();
             System.out.println(title);
@@ -49,7 +50,6 @@ public class handleBrowserWindow {
             }
         }
     }
-
 
 
     public static void main(String[] args) {

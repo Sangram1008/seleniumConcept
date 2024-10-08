@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test verbose="2" preserve-order="true" name="C:/Users/sangram.magdum/Desktop/New folder/SeleniumConcept">
+        <classes>
+            <class name="testNg.annotationClass">
+                <methods>
+                    <include name="Search"/>
+                    <include name="AdvSearch"/>
+                </methods>
+            </class>
+            <class name="testNg.annotationMethod">
+                <methods>
+                    <include name="Search"/>
+                    <include name="AdvSearch"/>
+                </methods>
+            </class>
+            <class name="testNg.annotationTest.c1">
+                <methods>
+                    <include name="abc"/>
+                </methods>
+            </class>
+            <class name="testNg.annotationTest.c2">
+                <methods>
+                    <include name="xyz"/>
+                </methods>
+            </class>
+            <class name="testNg.firstTestCase">
+                <methods>
+                    <include name="openApp"/>
+                    <include name="login"/>
+                    <include name="logOut"/>
+                </methods>
+            </class>
+            <class name="testNg.orangeHrm">
+                <methods>
+                    <include name="open"/>
+                    <include name="isLogoCorrect"/>
+                    <include name="logIn"/>
+                    <include name="logOut"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>

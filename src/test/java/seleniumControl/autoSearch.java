@@ -29,7 +29,7 @@ public class autoSearch {
         }
     }
 
-    public static void main(String []args) {
+    public static void main(String[] args) {
         autoSearch as = new autoSearch();
         as.openSite();
     }
