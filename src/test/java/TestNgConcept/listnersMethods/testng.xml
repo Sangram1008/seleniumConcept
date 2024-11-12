@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="testListenerSuite">
+    <listeners>
+        <listener class-name="TestNgConcept.listnersMethods.extentreportsManager"></listener>
+    </listeners>
+    <test name="listenerTest">
+        <classes>
+            <class name="TestNgConcept.listnersMethods.orgHrmLis">
+
+            </class>
+        </classes>
+    </test>
+</suite>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="dataProviderSuite" parallel="tests">
+    <test name="chromeTest">
+        <parameter name="browser" value="chrome"></parameter>
+        <parameter name="url" value="https://opensource-demo.orangehrmlive.com/web/index.php/auth/login"></parameter>
+        <classes>
+            <class name="TestNgConcept.dataProvider.parmTest"></class>
+        </classes>
+    </test>
+
+    <test name="edgeTest">
+        <parameter name="browser" value="edge"></parameter>
+        <classes>
+            <class name="TestNgConcept.dataProvider.parmTest"></class>
+        </classes>
+    </test>
+
+    <test name="firefoxTest">
+        <parameter name="browser" value="firefox"></parameter>
+        <classes>
+            <class name="TestNgConcept.dataProvider.parmTest"></class>
+        </classes>
+    </test>
+</suite>
